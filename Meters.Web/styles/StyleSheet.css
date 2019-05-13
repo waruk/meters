@@ -1,0 +1,88 @@
+﻿body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
+/* Page container
+------------------------------------------ */
+#page {
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+}
+
+/* Header 
+------------------------------------------ */
+header .logo-text {
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+}
+
+/* Main section 
+------------------------------------------ */
+.main-section {clear: both;}
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* Navigation menu 
+------------------------------------------ */
+nav ul {
+  padding: 0px;
+  list-style-type:none;
+}
+nav ul li {
+  float:left;
+}
+nav ul li a {
+  display: block;
+  font-family: "Verdana";
+  font-size: 14px;
+  text-decoration: none;
+  background: #4c5c1c;
+  padding: 10px;
+  margin-right: 5px;
+}
+nav ul li a:link {color: #FFF;}
+nav ul li a:visited {color: #FFF;}
+nav ul li a:hover {background: #A7C942;}
+
+/* Tables
+    -------------------------------------- */
+table {
+    width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+table td, th {padding:10px;}
+table tr:nth-child(even) {background-color: #EAF2D3;}
+table th {
+    background-color:#A7C942; 
+    color:white;
+}
+
+legend {
+    margin-left: 20px;
+    padding: 10px;
+    width: auto;
+}
+
+/* Instiintare lunara table
+------------------------------------------ */
+#instiintare-lunara {
+    width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#instiintare-lunara .numeric-value {
+    text-align: right;
+}
+
+.hide-row{
+    visibility:collapse;
+}
+
+.show-row{
+    visibility:visible;
+}

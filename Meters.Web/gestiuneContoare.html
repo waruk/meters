@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="styles/StyleSheet.css" rel="stylesheet" />
+    <script src="scripts/main.js"></script>
+    <title>Gestiune contoare</title>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <span class="logo-text">Contoare</span>
+            <span>Login</span>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Index contoare</a></li>
+                <li><a href="instiintareLunara.html">Instiintare lunara</a></li>
+                <li><a href="#">Istoric consum</a></li>
+                <li><a href="gestiuneContoare.html">Gestiune contoare</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-section">
+            <p><h1>Gestiune contoare</h1></p>
+
+            <table>
+                <tr>
+                    <th></th>
+                    <th>ContorID</th>
+                    <th>Serie</th>
+                    <th>Resursa contorizata</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Bucatarie</th>
+                    <td>1</td>
+                    <td>11111111</td>
+                    <td>Apa calda</td>
+                    <td><button class ="delete-button" type="button">Sterge</button></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>2</td>
+                    <td>22222222</td>
+                    <td>Apa rece</td>
+                    <td><button type="button" class="delete-button">Sterge</button></td>
+                </tr>
+                <tr>
+                    <th>Baie</th>
+                    <td>3</td>
+                    <td>33333333</td>
+                    <td>Apa calda</td>
+                    <td><button type="button" class="delete-button">Sterge</button></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>4</td>
+                    <td>44444444</td>
+                    <td>Apa rece</td>
+                    <td><button type="button" class="delete-button">Sterge</button></td>
+                </tr>
+            </table>
+
+            <form id="add-contor" action="gestiuneContoare.html" method="get">
+                <fieldset>
+                    <legend>Adauga contor</legend>
+
+                    <p>
+                        <label for="SerieContor">Serie</label>
+                        <input id="SerieContor" name="SerieContor" type="text" placeholder="Serie contor" required="required" />
+                    </p>
+                    
+                    <p>
+                        <label for="ResursaContorizata">Resursa contorizata</label>
+                        <select id="ResursaContorizata" name="ResursaContorizata" required="required">
+                            <option value=""></option>
+                            <option value="Apa calda">Apa calda</option>
+                            <option value="Apa rece">Apa rece</option>
+                        </select>
+                    </p>    
+                    <label for="LocatieContor">Locatie</label>
+                    <select id="LocatieContor" name="LocatieContor" required="required">
+                        <option value=""></option>
+                        <option value="Baie">Baie</option>
+                        <option value="Bucatarie">Bucatarie</option>
+                    </select>
+                    <p>
+
+                    </p>                    
+                    
+                    <input type="submit" value="Adauga" />
+                </fieldset>
+            </form>
+        </div>
+
+        <footer>
+            <p> &copy 2014 Contoare </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -2,7 +2,7 @@
 Gestioneaza index apometre
 
 ## backend API:
-- [ ] seed data
+- [x] seed data
 - [ ] lista contoare cu locatie (optiune de a include si indexurile)
 - [ ] lista indexuri per contor
 - [ ] adauga index per contor

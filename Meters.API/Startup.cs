@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Meters.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Meters
 {
@@ -26,6 +28,10 @@ namespace Meters
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            var connectionString = Configuration["connectionStrings:metersDBConnectionString"];
+            services.AddDbContext<MeterContext>(o => o.UseSqlite(connectionString));  // by default is registred with a scope lifetime
+            services.AddScoped<IMetersRepository, MetersRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

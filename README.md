@@ -1,14 +1,11 @@
-# meters
-Gestioneaza index apometre
-
-## backend API:
+# backend API:
 - [x] seed data
 - [ ] lista contoare cu locatie (optiune de a include si indexurile)
 - [ ] lista indexuri per contor
 - [ ] adauga index per contor
 - [ ] consum lunar
 
-## client:
+# client:
 - adaugare index lunar
 - modificare index lunar
 - raport consum lunar
@@ -17,5 +14,5 @@ Gestioneaza index apometre
 - ? grafice consum 
 - ? autentificare
 
-## technical env:
+# env:
 .net core, EF, sqlite, js/jquery

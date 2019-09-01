@@ -4,6 +4,7 @@
 - [ ] lista indexuri per contor
 - [ ] adauga index per contor
 - [ ] consum lunar
+- [ ] export date in csv
 
 # client:
 - adaugare index lunar
@@ -15,4 +16,5 @@
 - ? autentificare
 
 # env:
-.net core, EF, sqlite, js/jquery
+.net core, EF, sqlite, js/jquery  
+android UI ?
